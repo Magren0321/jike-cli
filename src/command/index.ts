@@ -5,6 +5,7 @@ import { user } from './user'
 import { post } from './post'
 import { msg } from './msg'
 import { likeRank } from './like-rank'
+import { story } from './story'
 
 export function run() {
   program
@@ -16,6 +17,7 @@ export function run() {
     .addCommand(post)
     .addCommand(msg)
     .addCommand(likeRank)
+    .addCommand(story)
     .addCommand(version)
     .version(versionNumber)
     .parse()
